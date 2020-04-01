@@ -1,0 +1,13 @@
+prefix=/home/vapplica/Downloads/libvncserver-master/BuildWin/Install
+exec_prefix=/home/vapplica/Downloads/libvncserver-master/BuildWin/Install
+libdir=/home/vapplica/Downloads/libvncserver-master/BuildWin/Install/lib
+includedir=/home/vapplica/Downloads/libvncserver-master/BuildWin/Install/include
+
+Name: LibVNCServer
+Description: A library for easy implementation of a VNC server.
+Version: 0.9.13
+Requires:
+Requires.private:
+Libs: -L${libdir} -lvncserver
+Libs.private:  -lpthread -lws2_32
+Cflags: -I${includedir}
